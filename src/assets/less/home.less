@@ -1,0 +1,117 @@
+
+.home {
+    .banner {
+        .auto-img {
+            width: 100%;
+            display: block;
+        }
+        .van-swipe__indicators {
+            margin-bottom: 20px;
+              
+            i {
+                width: 10px;
+                border-radius: 5px;
+                box-shadow: 0 0 2px #000;
+                &.van-swipe__indicator--active {
+                    width: 20px;
+                    border-radius: 5px;
+                }
+            }
+
+        }
+
+
+    }
+    .choice {
+        width: 90%;
+        height: 180px;
+        margin:0 auto;
+        transform: translateY(-23px);
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        text-align: center;
+        .left {
+            border-right: 1px solid #eee;
+        }
+        .left,
+        .right {
+            flex: 1;
+            em {
+                display: block;
+                width: 60px;
+                height: 60px;
+                margin: 10px auto;
+            }
+            .way {
+                font-size: 22px;
+                font-weight: bold;
+            }
+            .intr {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        }
+        
+    }
+   
+    .best-sellers {
+        margin-top: 30px;
+        padding: 0 15px;
+        margin-bottom: 50px;
+      
+        .hot-title {
+            font-size: 18px;
+            background-color:#0c34ba;
+            color: #fff;
+            width: 150px;
+            line-height: 60px;
+            text-align: center;
+            border-top-right-radius: 30px;
+            margin-bottom: 30px;
+          
+        }
+        .hot-coffee {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+           .hots {
+            text-indent: 10px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 48%;
+            height: 200px;
+            background-color:#fff;
+            margin-bottom: 10px;
+            &::before {
+                position: absolute;
+                right: 0;
+                top: -3px;
+                content: "";
+                display: block;
+                width: 32px;
+                height: 32px;
+                background: url("../images/hot.png") no-repeat;
+                background-size: 100%;
+            }
+            .name {
+                margin-top: 3px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .enname {
+                font-size: 12px;
+                margin:5px 0;
+                color: #8e959f; 
+            }
+            .price {
+                color: #0c34ba;
+                font-weight: bold;
+            }
+           }
+        }
+    }
+
+  
+}

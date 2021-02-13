@@ -1,0 +1,84 @@
+.menu {
+    // padding: 15px;
+    .head {
+        display: flex;
+        height: 40px;
+        margin: 10px 5px;
+        // background-color: #fff;
+        .icon {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        p {
+            flex: 1;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .goods {
+        // display: flex;
+       
+        .van-tabs__nav {
+
+        }
+
+
+
+
+
+
+        .van-tab__pane {
+            padding: 0 15px;
+            margin-bottom: 50px;
+          
+            .coffee {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+               .coffee-box {
+                text-indent: 10px;
+                position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+                width: 48%;
+                height: 200px;
+                background-color:#fff;
+                margin-bottom: 10px;
+                &.hot {
+                    &::before {
+                        position: absolute;
+                        right: 0;
+                        top: -3px;
+                        content: "";
+                        display: block;
+                        width: 32px;
+                        height: 32px;
+                        background: url("../images/hot.png") no-repeat;
+                        background-size: 100%;
+                    }
+                }
+                
+                .name {
+                    margin-top: 3px;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .enname {
+                    font-size: 12px;
+                    margin:5px 0;
+                    color: #8e959f; 
+                }
+                .price {
+                    color: #0c34ba;
+                    font-weight: bold;
+                }
+               }
+            }
+        }
+    }
+}
